@@ -13,7 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        display: ["var(--font-display)", "sans-serif"],
+        sans: ["var(--font-dm-sans)", "DM Sans", "sans-serif"],
       },
       keyframes: {
         kenBurns: {
