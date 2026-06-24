@@ -21,8 +21,8 @@ export default function SiteHeader() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Only go transparent on the homepage over the dark hero
-  const transparent = pathname === '/' && !scrolled && !open
+  // Transparent on all portfolio pages and home (full-screen hero/slider present)
+  const transparent = (pathname === '/' || pathname.startsWith('/portfolio')) && !scrolled && !open
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500

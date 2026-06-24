@@ -14,6 +14,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)", "DM Sans", "sans-serif"],
+        cormorant: ["var(--font-cormorant)", "Cormorant", "serif"],
       },
       keyframes: {
         kenBurns: {
