@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { DM_Sans, Cormorant } from 'next/font/google'
+import { baseMetadata } from '@/lib/metadata'
 import './globals.css'
 
 const dmSans = DM_Sans({
@@ -17,22 +18,7 @@ const cormorant = Cormorant({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: {
-    default: 'RedAntz Studios | Wedding & Portrait Photography',
-    template: '%s | RedAntz Studios',
-  },
-  description:
-    'RedAntz Studios — premium wedding, pre-wedding and portrait photography based in Visakhapatnam, India.',
-  openGraph: {
-    type: 'website',
-    locale: 'en_IN',
-    url: 'https://redantzstudios.com',
-    siteName: 'RedAntz Studios',
-  },
-  twitter: { card: 'summary_large_image' },
-  icons: { icon: '/favicon.ico' },
-}
+export const metadata: Metadata = baseMetadata
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
